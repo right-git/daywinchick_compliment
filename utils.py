@@ -15,5 +15,3 @@ def get_image_base64(image_path: str) -> str:
     encoded_image = base64.b64encode(image_data).decode('utf-8')
     os.remove(image_path)
     return encoded_image
-
-
