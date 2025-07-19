@@ -26,7 +26,7 @@ Follow these steps to get your compliment bot up and running.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/daywinchick_compliment.git
+git clone https://github.com/right-git/daywinchick_compliment.git
 cd daywinchick_compliment
 ```
 
@@ -39,9 +39,8 @@ This project uses `uv` for package management.
 pip install uv
 
 # Create a virtual environment and install dependencies
-uv venv
+uv sync
 source .venv/bin/activate
-uv pip install -r requirements.txt # Or `uv pip install -p pyproject.toml`
 ```
 
 ### 3. Configure Environment Variables
@@ -58,11 +57,9 @@ Now, open the `.env` file and fill in the following values:
 -   `API_ID` & `API_HASH`: Get these from [my.telegram.org](https://my.telegram.org).
 -   `PHONE_NUMBER`: Your Telegram phone number in international format (e.g., `+1234567890`).
 -   `BOT_CHAT_ID`: The ID of the target chat. You can get this from a bot like `@userinfobot`.
--   `BOT_TRIGGER_MESSAGE`: The exact text that will trigger the compliment generation.
 -   `LLM_API_KEY`: Your API key for the language model.
 -   `LLM_BASE_URL`: The base URL for the LLM API endpoint.
 -   `LLM_MODEL`: The specific model to use (e.g., `gpt-4o`).
--   `SYSTEM_PROMPT`: The instruction prompt for the AI model.
 -   `PROXY` (Optional): If you need a proxy to access the LLM API.
 
 ## ▶️ Usage
