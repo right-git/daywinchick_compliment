@@ -128,7 +128,7 @@ async def main():
         )
     )
     if not tg_client.is_connected():
-        await tg_client.connect()
+        await tg_client.start()
     await tg_client.run_until_disconnected()  # type: ignore
 
 
